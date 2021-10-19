@@ -24,6 +24,9 @@ public class Auto {
 		int registrar = this.registro;
 		for (Asiento asiento:asientos)
 		{
+			if(asiento != null) {
+				
+			}
 			if (registrar == asiento.registro && registrar == this.motor.registro) {
 				return "Auto original";
 			} 
