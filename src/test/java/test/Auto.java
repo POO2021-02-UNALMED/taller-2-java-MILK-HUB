@@ -20,27 +20,23 @@ public class Auto {
 		return cantidad;
 		
 	}
-	String verificarIntegrdad() {
-		int registrar = this.registro;
-		for (Asiento asiento:asientos)
-		{
-			if(asiento != null) {
-				
-			}
-			if (registrar == asiento.registro && registrar == this.motor.registro) {
-				return "Auto original";
-			} 
-			
-			else {
-				return "Las piezas no son originales";
-			}
-		}
-		
+	  public String verificarIntegridad(){
+	        int registrar = this.registro;
+	        for (Asiento asiento:asientos) {
+	            if(asiento != null) {
+	                if (registrar == asiento.registro && registrar == this.motor.registro) {
+	                    return "Auto original";
+	                } else {
+	                    return "Las piezas no son originales";
+	                }
+	            }
+	        }
+			return marca;
+	    }
+
 	
-	
-		return marca;
-		
+
 	}
 	
 	
-}
+
